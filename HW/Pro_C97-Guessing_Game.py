@@ -2,11 +2,11 @@ import time
 import random
 
 again = True
-num = random.randint(1, 100)
+num = random.randint(1, 200)
 turns = 0
 while again==True:
   try:
-    inp=int(input("Guess my number! It is somewhere from 1 to 100! "))
+    inp=int(input("Guess my number! It is somewhere from 1 to 200! "))
     if inp == num:
       print("You WON in just", str(turns), "chances!")
       while True:
