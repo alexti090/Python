@@ -21,11 +21,11 @@ class ATM():
   def switch(self):
     if self.symbol == '₹':
       self.symbol = '$'
-      self.balance = round(self.balance / 74, 2)
+      self.balance /= 74
       print('Switched from INR(₹) to USD($).')
     elif self.symbol == '$':
       self.symbol = '₹'
-      self.balance = round(self.balance * 74, 2)
+      self.balance *= 74
       print('Switched from USD($) to INR(₹).')
 
   def check(self):
@@ -55,8 +55,6 @@ class ATM():
       time.sleep(3)
     else:
       print('Invalid input, try again')
-      time.sleep(2)
-      self.command()
 
 bank = ATM()
 bank.command()

@@ -1,16 +1,17 @@
-import time, random
+import time
+import random
 
 again = True
 num = random.randint(1, 200)
 turns = 0
-while again == True:
+while again==True:
   try:
-    inp = int(input("\nGuess my number! It is somewhere from 1 to 200! "))
+    inp=int(input("Guess my number! It is somewhere from 1 to 200! "))
     if inp == num:
       print("You WON in just", str(turns), "chances!")
       while True:
         time.sleep(1)
-        a = input("Play again? (Y/N): ")
+        a=input("Play again? (Y/N): ")
         if a == "N" or a == "No" or a == "n" or a == "no":
           print("Thanks for playing!")
           again = False
