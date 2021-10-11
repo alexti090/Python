@@ -20,5 +20,5 @@ df2.rename(columns={
   'Radius(RJ)': 'radius'
 }, inplace=True)
 
-df1.to_csv('./data1.csv')
-df2.to_csv('./data2.csv')
+df1.to_csv('./csv-data/data1.csv')
+df2.to_csv('./csv-data/data2.csv')
